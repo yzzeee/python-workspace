@@ -6,6 +6,8 @@
  4) 특수문자를 사용하면 안된다. (&, % 등)
  5) 키워드를 사용하면 안된다. (if, for 등)
 '''
+
+'''
 a=1
 print(a)
 A=2
@@ -41,9 +43,12 @@ print(a, b, c, sep='\n')
 print(a, end=' ')
 print(b, end=' ')
 print(b, end=' ')
+'''
 
 '''
 변수입력과 연산자
+'''
+
 '''
 # a=input("숫자를 입력하시오 : ")
 # print(a)
@@ -63,4 +68,39 @@ a=4.3
 b=5
 c=a+b
 print(c, type(c))
+'''
 
+'''
+조건문 if(분기, 중첩)
+'''
+'''
+x=7
+if x==7:
+    print("Lucky")
+    print("ㅋㅋ")
+x=15
+if x>=10:
+    if x%2==1:
+        print("10 이상의 홀수")
+x=9
+if x>0:
+    if x<10:
+        print("10보다 작은 자연수")
+x=7
+if x>0 and x<10:
+    print("10보다 작은 자연수")
+if 0<x<10:
+    print("10보다 작은 자연수")
+x=10
+if x>0:
+    print("양수")
+else:
+    print("음수")
+x=80
+if x>=90:
+    print("A")
+elif x>80:
+    print("B")
+elif x>70:
+    print("C")
+'''
