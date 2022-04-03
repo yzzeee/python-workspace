@@ -357,6 +357,8 @@ else:
 '''
 2차원 리스트 생성과 접근
 '''
+
+'''
 a = [0] * 10
 print(a)
 a = [[0] * 3 for _ in range(3)]  # 2차원 리스트 선언
@@ -367,3 +369,36 @@ for x in a:  # 2차원 리스트 출력
     for y in x:
         print(y, end=' ')
     print()
+'''
+
+'''
+함수 만들기
+'''
+
+
+def add(a, b):
+    c = a + b
+    print(c)
+
+
+add(3, 2)
+
+
+def add(a, b):
+    return a + b
+
+
+print(add(3, 2))
+
+
+def isPrime(x): # 소수만 출력하는 함수
+    for i in range(2, x):
+        if x % i == 0:
+            return False
+    return True
+
+
+a = [12, 13, 7, 9, 19]
+for y in a:
+    if isPrime(y):
+        print(y, end=' ')
