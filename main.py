@@ -317,6 +317,8 @@ print(a)
 '''
 리스트와 내장함수(2)
 '''
+
+'''
 a = [23, 12, 36, 53, 19]
 print(a[:3])
 print(a[1:4])
@@ -350,4 +352,18 @@ if any(60 < x for x in a):
     print('any true')
 else:
     print('all false')
+'''
 
+'''
+2차원 리스트 생성과 접근
+'''
+a = [0] * 10
+print(a)
+a = [[0] * 3 for _ in range(3)]  # 2차원 리스트 선언
+print(a)
+a[0][1] = 1
+print(a)
+for x in a:  # 2차원 리스트 출력
+    for y in x:
+        print(y, end=' ')
+    print()
