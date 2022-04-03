@@ -264,6 +264,8 @@ print(chr(tmp))
 '''
 리스트와 내장함수(1)
 '''
+
+'''
 import random as r
 
 a = []
@@ -310,3 +312,42 @@ a.sort()
 print(a)
 a.clear()  # 리스트의 값을 모두 제거
 print(a)
+'''
+
+'''
+리스트와 내장함수(2)
+'''
+a = [23, 12, 36, 53, 19]
+print(a[:3])
+print(a[1:4])
+print(len(a))
+for i in range(len(a)):
+    print(a[i], end=' ')
+print()
+for x in a:
+    print(x, end=' ')
+print()
+for x in a:
+    if x % 2 == 1:
+        print(x, end=' ')
+print()
+for x in enumerate(a):
+    print(x)  # 튜플 출력
+b = (1, 2, 3, 4, 5)
+print(b[0])
+# b[0] = 7  # 에러 발생, 튜플의 값은 변경이 불가
+for x in enumerate(a):
+    print(x[0], x[1])
+print()
+for i, v in enumerate(a):  # 가장 많이 사용하는 방법
+    print(i, v)
+print()
+if all(60 > x for x in a):
+    print('all true')
+else:
+    print('has false')
+if any(60 < x for x in a):
+    print('any true')
+else:
+    print('all false')
+
