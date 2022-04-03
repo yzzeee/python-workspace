@@ -108,6 +108,7 @@ elif x>70:
 '''
 반복문(for, while)
 '''
+'''
 a=range(10)
 print(list(a))
 for i in range(10):
@@ -159,3 +160,29 @@ for i in range(1, 11):
         break
 else: # for 문이 정상적으로 종료되었을 때
     print(11)
+'''
+
+'''
+반복문을 이용한 문제풀이
+ 1) 1부터 N까지 홀수 출력하기
+ 2) 1부터 N까지 합 구하기
+ 3) N의 약수 출력하기
+'''
+
+# 1부터 N까지 홀수 출력하기
+N = int(input("숫자를 입력하시오 : "))
+for i in range(N + 1):
+    if i % 2 == 1:
+        print(i, end=' ')
+print("\n")
+# 1부터 N까지 합 구하기
+N = int(input("숫자를 입력하시오 : "))
+acc = 0
+for i in range(N + 1):
+    acc += i
+print(acc, end="\n\n")
+# N의 약수 출력하기
+N = int(input("숫자를 입력하시오 : "))
+for i in range(1, N + 1):
+    if N % i == 0:
+        print(i, end=' ')
