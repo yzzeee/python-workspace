@@ -191,6 +191,7 @@ for i in range(1, N + 1):
 '''
 중첩 반복문(2중 for문)
 '''
+'''
 for i in range(5):
     for j in range(5):
         print(j, end=' ')
@@ -212,3 +213,48 @@ for i in range(5):
     for j in range(5-i):
         print('*', end=' ')
     print()
+'''
+
+'''
+문자열과 내장함수
+'''
+msg="It is Time"
+print(msg)
+print(msg.upper())
+print(msg.lower())
+tmp=msg.upper()
+print(tmp)
+print(tmp.find('T'))
+print(tmp.count('T'))
+print(msg)
+print(msg[:4]) # 시작:종료 인덱스 종료 인덱스 전까지 출력
+print(msg[3:5]) # 3번 인덱스에서 4번 인덱스까지
+print(len(msg))
+for i in range(len(msg)):
+    print(msg[i], end=' ')
+print()
+for x in msg:
+    print(x)
+print()
+for x in msg:
+    if x.isupper():
+        print(x)
+print()
+for x in msg:
+    if x.islower():
+        print(x)
+print()
+for x in msg:
+    if x.isalpha(): # 알파벳이냐?
+        print(x)
+print()
+tmp='AZ'
+for x in tmp:
+    print(ord(x)) # 아스키넘버를 출력
+print()
+tmp='az'
+for x in msg:
+    print(ord(x))
+print()
+tmp=65
+print(chr(tmp))
