@@ -218,6 +218,7 @@ for i in range(5):
 '''
 문자열과 내장함수
 '''
+'''
 msg="It is Time"
 print(msg)
 print(msg.upper())
@@ -258,3 +259,54 @@ for x in msg:
 print()
 tmp=65
 print(chr(tmp))
+'''
+
+'''
+리스트와 내장함수(1)
+'''
+import random as r
+
+a = []
+print(a)
+b = list()
+print(b)
+a = [1, 2, 3, 4, 5]
+print(a)
+print(a[0])
+
+b = list(range(1, 20))
+print(b)
+
+c = a + b
+print(c)
+
+print(a)
+a.append(6)
+print(a)
+a.insert(3, 7)  # 첫 번째 인자로 들어온 인덱스에 두 번째 인자의 값 삽입
+print(a)
+a.pop()  # 리스트의 맨 뒤의 인덱스 값 추출
+print(a)
+a.pop(3)  # 해당 인덱스의 값 추출
+print(a)
+a.append(4)
+print(a)
+a.remove(4)  # 리스트에서 첫 번째로 찾게되는 해당 값 추출
+print(a)
+print(a.index(5))  # 인자의 값을 찾아서 해당 인덱스를 반환
+a = list(range(1, 10))
+print(a)
+print(sum(a))  # 리스트 모든 값의 합
+print(max(a))  # 인자로 들어온 값 중 최대값
+print(min(a))  # 인자로 들어온 값 중 최소값
+print(min(7, 3, 5))
+r.shuffle(a)
+print(a)  # 인자로 들어온 값을 직접 변경
+a.sort()
+print(a)
+a.sort(reverse=True)  # 내림차순 정렬
+print(a)
+a.sort()
+print(a)
+a.clear()  # 리스트의 값을 모두 제거
+print(a)
