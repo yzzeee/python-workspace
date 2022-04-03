@@ -104,3 +104,58 @@ elif x>80:
 elif x>70:
     print("C")
 '''
+
+'''
+반복문(for, while)
+'''
+a=range(10)
+print(list(a))
+for i in range(10):
+    print("hello1", i)
+    if i == 9:
+        print("\n")
+for i in range(1, 11):
+    print("hello2", i)
+    if i == 10:
+        print("\n")
+for i in range(10, 0, -2): # range의 마지막 인자는 간격
+    print("hello3", i)
+    if i == 2:
+        print("\n")
+i=1
+while i<=10:
+    print("hello4", i)
+    if i == 10:
+        print("\n")
+    i=i+1
+i=10
+while i>=1:
+    print("hello5", i)
+    if i == 1:
+        print("\n")
+    i=i-1
+i=1
+while True:
+    print("hello6", i)
+    if i==10:
+        print("\n")
+        break
+    i+=1
+for i in range(1, 11):
+    if i%2==0:
+        continue
+    print("hello7", i)
+    if i==9:
+        print("\n")
+for i in range(1, 11):
+    print("hello8", i)
+    if i==5:
+        break
+else:
+    print(11)
+for i in range(1, 11):
+    print("hello9", i)
+    if i == 5:
+        break
+else: # for 문이 정상적으로 종료되었을 때
+    print(11)
