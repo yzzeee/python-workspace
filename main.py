@@ -168,7 +168,7 @@ else: # for 문이 정상적으로 종료되었을 때
  2) 1부터 N까지 합 구하기
  3) N의 약수 출력하기
 '''
-
+'''
 # 1부터 N까지 홀수 출력하기
 N = int(input("숫자를 입력하시오 : "))
 for i in range(N + 1):
@@ -186,3 +186,29 @@ N = int(input("숫자를 입력하시오 : "))
 for i in range(1, N + 1):
     if N % i == 0:
         print(i, end=' ')
+'''
+
+'''
+중첩 반복문(2중 for문)
+'''
+for i in range(5):
+    for j in range(5):
+        print(j, end=' ')
+    print()
+for i in range(5):
+    print('i:', sep='', end=' ')
+    for j in range(5):
+        print('j:', j, sep='', end=' ')
+    print()
+for i in range(5):
+    for j in range(5):
+        print('*', end=' ')
+    print()
+for i in range(5):
+    for j in range(i+1):
+        print('*', end=' ')
+    print()
+for i in range(5):
+    for j in range(5-i):
+        print('*', end=' ')
+    print()
