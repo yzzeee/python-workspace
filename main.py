@@ -375,7 +375,7 @@ for x in a:  # 2차원 리스트 출력
 함수 만들기
 '''
 
-
+'''
 def add(a, b):
     c = a + b
     print(c)
@@ -402,3 +402,22 @@ a = [12, 13, 7, 9, 19]
 for y in a:
     if isPrime(y):
         print(y, end=' ')
+'''
+
+'''
+람다 함수
+'''
+
+
+def plus_one(x):
+    return x + 1
+
+
+print(plus_one(1))
+
+plus_two = lambda x: x + 2
+print(plus_two(2))
+
+a = [1, 2, 3]
+print(list(map(plus_two, a)))
+print(list(map(lambda x: x + 3, a)))
